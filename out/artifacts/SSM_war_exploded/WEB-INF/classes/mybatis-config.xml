@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--添加日志-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+<!--配置数据源-->
+    <typeAliases>
+        <package name="com.ch.pojo"/>
+    </typeAliases>
+    <mappers>
+        <mapper class="com.ch.dao.BookMapper"/>
+    </mappers>
+</configuration>
